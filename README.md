@@ -33,11 +33,20 @@ install npm
 * "mocha-jsdom": "1.1.0"
 * "should": "11.1.0"
 
-if your mocha is global 
-use
+> if your mocha is global 
+> use
 > mocha --compilers js:babel-core/register "your test path"
-or not 
+> or not 
 > ../node_modules/bin/mocha --compilers js:babel-core(babel)/register "your test path"
+
+and add '.babelrc'
+
+```javascript 
+{
+      "presets": ["es2015"]
+}
+
+```
 
 ##  6. 其他
 
