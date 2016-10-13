@@ -25,6 +25,20 @@ devServer: {
 ```
 ##  4. ES6 
 
-## 5. 其他
+##  5. Mocha
+install npm 
+* "babel": "6.5.2"
+* "babel-core": "6.14.0"
+* "babel-preset-es2015": "6.14.0"
+* "mocha-jsdom": "1.1.0"
+* "should": "11.1.0"
+
+if your mocha is global 
+use
+> mocha --compilers js:babel-core/register "your test path"
+or not 
+> ../node_modules/bin/mocha --compilers js:babel-core(babel)/register "your test path"
+
+##  6. 其他
 
 [相關文章教學：](https://segmentfault.com/a/1190000007126268)
